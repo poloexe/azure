@@ -2,10 +2,8 @@
 
 > Hardening a Microsoft Azure environment end-to-end: least-privilege IAM, network lockdown, storage protection, policy guardrails, and threat detection with Defender for Cloud + Log Analytics.
 
-- **Author:** Isemin Baruch ([@poloexe](https://github.com/poloexe))
 - **Date:** July 31, 2026
 - **Platform:** Microsoft Azure
-- **Original report:** [`azure-project.pdf`](./azure-project.pdf)
 
 ---
 
@@ -285,11 +283,11 @@ Based on the Microsoft Defender for Cloud CSPM scan, the following actions are p
 
 ## Key Takeaways
 
-- **Least privilege everywhere** — scoped RBAC roles, MFA enforcement, and SAS tokens over master keys all shrink the blast radius of a compromised identity.
-- **Deny-by-default networking** — removing the default SSH rule and allowlisting a single trusted IP makes the VM invisible to the rest of the internet, and the blocked/allowed tests prove the perimeter works.
-- **Guardrails beat manual review** — Azure Policy blocks non-compliant deployments automatically, before a misconfigured resource can ever exist.
-- **You can't protect what you can't see** — wiring the VM into Log Analytics via a Data Collection Rule turned a simulated brute-force attack into a queryable event in seconds, with KQL providing the hunting capability.
-- **Posture management is continuous** — Defender for Cloud CSPM converts the environment's weaknesses into a prioritized, actionable backlog.
+- **Least privilege everywhere**: scoped RBAC roles, MFA enforcement, and SAS tokens over master keys all shrink the blast radius of a compromised identity.
+- **Deny-by-default networking**: removing the default SSH rule and allowlisting a single trusted IP makes the VM invisible to the rest of the internet, and the blocked/allowed tests prove the perimeter works.
+- **Guardrails beat manual review**: Azure Policy blocks non-compliant deployments automatically, before a misconfigured resource can ever exist.
+- **You can't protect what you can't see**: wiring the VM into Log Analytics via a Data Collection Rule turned a simulated brute-force attack into a queryable event in seconds, with KQL providing the hunting capability.
+- **Posture management is continuous**: Defender for Cloud CSPM converts the environment's weaknesses into a prioritized, actionable backlog.
 
 ---
 
